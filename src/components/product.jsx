@@ -1,4 +1,4 @@
-import React, {useState,createContext, useContext} from "react";
+import React, {useState,createContext, useContext, createElement} from "react";
 import PageHeader from "../components/pageHeader";
 import PageFooter from "../components/pageFooter";
 import {Context} from "../App";
@@ -15,6 +15,7 @@ function product() {
     const {listIphone, setListIphone} = useContext(Context);
     const {listAirpod, setListAirpod} = useContext(Context);
     const {listMacbook, setListMacbook} = useContext(Context);
+
 
     function increaseQuantityIphone() {
         setQuantity(quantity+1)
